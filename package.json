@@ -1,0 +1,24 @@
+{
+  "name": "lab-qa-automation",
+  "version": "1.0.0",
+  "description": "Suite de tests end-to-end Playwright pour Lab.qa (boutique fictive d'entraînement QA de SSID)",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^22.20.5",
+    "dotenv": "^18.0.7",
+    "typescript": "^7.0.2"
+  }
+}
